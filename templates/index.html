@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <title>Appointment Booking</title>
+    <script src="{% static 'appointment-booking.js' %}"></script>
+</head>
+<body>
+    <div id="appointment-widget" class="container"></div>
+
+    <script>
+        
+        EmbedBookingWidget("appointment-widget");
+    </script>
+</body>
+</html>
