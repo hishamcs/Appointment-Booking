@@ -51,6 +51,35 @@ Frontend (JavaScript Plugin)
 
 API Endpoints
 
-    - GET /api/appointments/slots/?date=YYYY-MM-DD - Get available slots for a date.
+    1. GET /api/appointments/slots/?date=YYYY-MM-DD - Get available slots for a date.
 
-    - POST /api/appointments/book/ - Book an appointment.
+        Request Example: GET /api/appointments/slots/?date=2025-03-10
+
+        Response Example (Success - 200 OK):
+            {
+                "date": "2025-03-10",
+                "available_slots": [
+                    "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM",
+                    "12:00 PM", "12:30 PM", "2:00 PM", "2:30 PM",
+                    "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM"
+                ]
+            }
+
+    2. POST /api/appointments/book/ - Book an appointment.
+
+        Request Example:
+
+        {
+            "name": "John Doe",
+            "phone_number": "1234567890",
+            "date": "2025-03-10",
+            "time_slot": "10:00 AM"
+        }
+
+        Response Example (Success - 201 Created):
+            Success response 
+        
+        Response Example (Failure - 400 Bad Request - Slot Already Booked):
+        {
+            "error": "This slot is already booked."
+        }
