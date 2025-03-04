@@ -20,17 +20,17 @@ Installation & Setup
 
 Clone the repository:
 
- https://github.com/hishamcs/Appointment-Booking.git
+    - https://github.com/hishamcs/Appointment-Booking.git
  
 
 Create a virtual environment and activate it:
 
- python -m venv venv
- source venv/bin/activate  # On Windows use `venv\\Scripts\\activate`
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\\Scripts\\activate`
 
 Install dependencies:
-
- pip install -r requirements.txt
+    
+    - pip install -r requirements.txt
 
 Apply migrations and start the server:
 
