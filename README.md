@@ -41,13 +41,13 @@ Frontend (JavaScript Plugin)
 
     - Add the following script to your HTML file:
 
-<script src="http://127.0.0.1:8000/appointment-booking.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        EmbedBookingWidget("booking-container");
-    });
-</script>
-<div id="booking-container"></div>
+        <script src="http://127.0.0.1:8000/appointment-booking.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                EmbedBookingWidget("booking-container");
+            });
+        </script>
+        <div id="booking-container"></div>
 
 API Endpoints
 
